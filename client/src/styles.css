@@ -28,10 +28,10 @@
     position: relative;
   }
   
-  /* .member-tabset > .nav-tabs > li.active > a {
-    border: 0 !important;
-    color: #E95420;
-  } */
+  .member-tabset > .nav-tabs > li.active > a {
+    border: 0 transparent;
+    /* color: #303030; */
+  }
   
   /* .member-tabset > .nav-tabs > li.active > a > i {
     color: blue;
