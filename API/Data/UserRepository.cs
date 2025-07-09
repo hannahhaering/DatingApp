@@ -17,7 +17,7 @@ public class UserRepository(DataContext context, IMapper mapper) : IUserReposito
 
     public async Task<PagedList<MemberDto>> GetMembersAsync(UserParams userParams)
     {
-        var query =  context.Users.AsQueryable();
+        var query = context.Users.AsQueryable();
 
         query = query.Where(x => x.UserName != userParams.CurrentUsername);
 
